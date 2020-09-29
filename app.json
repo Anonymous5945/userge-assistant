@@ -1,0 +1,54 @@
+{
+  "name": "usergeBot",
+  "description": "userge Telegram Bot. Powered by @userge",
+  "keywords": [
+    "telegram",
+    "best",
+    "indian",
+    "userge",
+    "userbot",
+    "3",
+    "plugin",
+    "modular",
+    "productivity"
+  ],
+  "repository": "https://github.com/Anonymous5945/userge-assistant",
+  "success_url": "https://github.com/Anonymous5945/userge-assistant",
+  "website": "https://github.com/Anonymous5945/userge-assistant",
+  "env": {
+    "ENV": {
+      "description": "Setting this to ANYTHING will enable webhooks when in env mode",
+      "value": "ANYTHING"
+    },
+    "APP_ID": {
+      "description": "Get this value from https://my.telegram.org"
+    },
+    "API_HASH": {
+      "description": "Get this value from https://my.telegram.org"
+    },
+    "TG_BOT_TOKEN_BF_HER": {
+      "description": "Get this value from @BotFather"
+    },
+    "AUTH_CHANNEL": {
+      "description": "should be an integer. The BOT API ID of the Telegram Group, where the Leecher should work.",
+      "value": "-1001215557536 -1001454596428 -1001139792623 -1001343951559"
+    }
+  },
+  "addons": [{
+    "plan": "heroku-postgresql",
+    "options": {
+      "version": "12"
+    }
+  }],
+  "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  }, {
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
