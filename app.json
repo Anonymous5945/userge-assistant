@@ -31,7 +31,7 @@
     },
     "AUTH_CHATS": {
       "description": "should be an integer. The BOT API ID of the Telegram Group, where the Leecher should work.",
-      "value": "-1001215557536 -1001454596428 -1001139792623 -1001343951559"
+      "value": "-1001426538640"
     }
   },
   "addons": [{
